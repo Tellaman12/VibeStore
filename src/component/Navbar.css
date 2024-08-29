@@ -1,0 +1,32 @@
+.Nabb {
+    background: linear-gradient(90deg, #c41313, #171d1b); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a lifted effect */
+    position: fixed; /* Stick the navbar at the top */
+    top: 0; /* Align the navbar at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keep it on top of other elements */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.Nabb a {
+    float: right; /* Align links horizontally */
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 16px 20px; /* Padding around the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Make text bold */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.Nabb a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.Nabb a.active {
+    background-color: #15a84e; /* Active link background */
+    color: white; /* Active link text */
+    border-radius: 4px; /* Rounded corners for active link */
+}
